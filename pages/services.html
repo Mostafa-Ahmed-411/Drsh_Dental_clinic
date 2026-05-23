@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore all dental services at Drsh Clinic – teeth whitening, implants, orthodontics, Hollywood Smile, root canal and more in Assiut." />
+  <title>Services – Drsh Clinic</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="Drsh Clinic Home">
+        <div class="logo-icon">🦷</div>
+        <div class="logo-text">
+          <span class="logo-name">Drsh Clinic</span>
+          <span class="logo-tagline">Advanced Dental Care</span>
+        </div>
+      </a>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a>
+        <a href="services.html" class="nav-link active" data-i18n="nav_services">Services</a>
+        <a href="achievements.html" class="nav-link" data-i18n="nav_achievements">Achievements</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">عر</button>
+        </div>
+        <a href="https://wa.me/201032161126" class="whatsapp-nav-btn" target="_blank" rel="noopener">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.13 1.523 5.868L.057 23.879a.5.5 0 0 0 .609.625l6.273-1.643A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 0 1-5.071-1.383l-.363-.217-3.773.988.989-3.658-.236-.373A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          <span data-i18n="nav_book">Book on WhatsApp</span>
+        </a>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+  <nav class="mobile-menu">
+    <a href="../index.html" class="nav-link" data-i18n="nav_home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a>
+    <a href="services.html" class="nav-link active" data-i18n="nav_services">Services</a>
+    <a href="achievements.html" class="nav-link" data-i18n="nav_achievements">Achievements</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a>
+    <div class="mobile-menu-footer">
+      <a href="https://wa.me/201032161126" class="btn btn-whatsapp" target="_blank" rel="noopener">Book on WhatsApp</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- PAGE HERO -->
+<section class="page-hero" aria-label="Services page hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="page-hero-badge">Our Services</span>
+      <h1>Complete Dental Care Solutions</h1>
+      <p>From routine cleaning to full smile transformations — everything under one roof.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section-pad">
+  <div class="container">
+
+    <!-- Search & Filter -->
+    <div class="search-filter-bar reveal">
+      <div class="search-input-wrap">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input
+          type="search"
+          id="serviceSearch"
+          class="search-input"
+          placeholder="Search for a service..."
+          aria-label="Search services"
+        />
+      </div>
+      <div class="filter-tags" role="group" aria-label="Filter services by category">
+        <button class="filter-tag active" data-filter="all">All Services</button>
+        <button class="filter-tag" data-filter="cosmetic">Cosmetic</button>
+        <button class="filter-tag" data-filter="restorative">Restorative</button>
+        <button class="filter-tag" data-filter="implants">Implants</button>
+        <button class="filter-tag" data-filter="orthodontics">Orthodontics</button>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-full-grid" id="servicesGrid">
+
+      <!-- 1. Teeth Cleaning -->
+      <article class="service-full-card card-same-hight reveal reveal-delay-1" data-category="restorative">
+        <div class="offer-pill">15% Off</div>
+        <img src="../imgs/HollywoodSmile.jpg"
+             alt="Teeth Cleaning" class="service-full-img" loading="lazy" />
+        <div class="service-full-body  card-same-hight">
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ 30–45 min</span>
+            <span class="service-meta-item">🏷 Restorative</span>
+          </div>
+          <h3 class="service-full-name">Teeth Cleaning</h3>
+          <p class="service-full-desc card-same-hight">Professional scaling and polishing to remove plaque, tartar, and surface stains. Essential for maintaining gum health and preventing decay .</p>
+          <div class="service-full-footer">
+            <div class="service-full-price">300 <span class="currency">EGP</span></div>
+            <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20Teeth%20Cleaning"
+               class="btn btn-whatsapp" style="padding:10px 18px;font-size:0.85rem;" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Teeth Whitening -->
+      <article class="service-full-card card-same-hight reveal reveal-delay-2" data-category="cosmetic">
+        <img src="../imgs/Teeth Whitening.jpg"
+             alt="Teeth Whitening" class="service-full-img" loading="lazy" />
+        <div class="service-full-body  card-same-hight">
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ 60 min</span>
+            <span class="service-meta-item">🏷 Cosmetic</span>
+          </div>
+          <h3 class="service-full-name">Teeth Whitening</h3>
+          <p class="service-full-desc card-same-hight">Professional in-office whitening treatment that brightens your smile up to 8 shades in a single session using advanced whitening technology.</p>
+          <div class="service-full-footer">
+            <div class="service-full-price">1,200 <span class="currency">EGP</span></div>
+            <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20Teeth%20Whitening"
+               class="btn btn-whatsapp" style="padding:10px 18px;font-size:0.85rem;" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Cosmetic Fillings -->
+      <article class="service-full-card card-same-hight reveal reveal-delay-3" data-category="cosmetic">
+        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&h=420&fit=crop&q=80"
+             alt="Cosmetic Fillings" class="service-full-img" loading="lazy" />
+        <div class="service-full-body  card-same-hight">
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ 30–60 min</span>
+            <span class="service-meta-item">🏷 Cosmetic</span>
+          </div>
+          <h3 class="service-full-name">Cosmetic Fillings</h3>
+          <p class="service-full-desc card-same-hight">Tooth-colored composite resin fillings that blend seamlessly with your natural teeth — restoring function and aesthetics at the same time.</p>
+          <div class="service-full-footer">
+            <div class="service-full-price">500 <span class="currency">EGP</span></div>
+            <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20Cosmetic%20Fillings"
+               class="btn btn-whatsapp" style="padding:10px 18px;font-size:0.85rem;" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Root Canal -->
+      <article class="service-full-card card-same-hight reveal reveal-delay-1" data-category="restorative">
+        <img src="../imgs/Root Canal Treatment.jpg"
+             alt="Root Canal Treatment" class="service-full-img" loading="lazy" />
+        <div class="service-full-body  card-same-hight">
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ 60–90 min</span>
+            <span class="service-meta-item">🏷 Restorative</span>
+          </div>
+          <h3 class="service-full-name">Root Canal Treatment</h3>
+          <p class="service-full-desc card-same-hight">Painless, advanced endodontic treatment to save severely infected teeth. Using modern rotary systems for precise, comfortable procedures.</p>
+          <div class="service-full-footer">
+            <div class="service-full-price">1,500 <span class="currency">EGP</span></div>
+            <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20Root%20Canal%20Treatment"
+               class="btn btn-whatsapp" style="padding:10px 18px;font-size:0.85rem;" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Orthodontics -->
+      <article class="service-full-card card-same-hight reveal reveal-delay-2" data-category="orthodontics">
+        <img src="../imgs/Orthodontics.jpg"
+             alt="Orthodontics" class="service-full-img" loading="lazy" />
+        <div class="service-full-body  card-same-hight">
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ 12–24 months</span>
+            <span class="service-meta-item">🏷 Orthodontics</span>
+          </div>
+          <h3 class="service-full-name">Orthodontics</h3>
+          <p class="service-full-desc card-same-hight">Modern braces and aligner systems for perfectly straight teeth. Flexible installment payment plans available to make treatment accessible.</p>
+          <div class="service-full-footer">
+            <div class="service-full-price">12,000 <span class="currency">EGP</span></div>
+            <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20Orthodontic%20treatment"
+               class="btn btn-whatsapp" style="padding:10px 18px;font-size:0.85rem;" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Dental Implants -->
+      <article class="service-full-card card-same-hight reveal reveal-delay-3" data-category="implants">
+        <img src="../imgs/Dental Implants.jpg"
+             alt="Dental Implants" class="service-full-img" loading="lazy" />
+        <div class="service-full-body  card-same-hight">
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ Multi-session</span>
+            <span class="service-meta-item">🏷 Implants</span>
+          </div>
+          <h3 class="service-full-name">Dental Implants</h3>
+          <p class="service-full-desc card-same-hight">Premium titanium implants that fuse with the jawbone for permanent, natural-looking tooth replacement. The gold standard in tooth restoration.</p>
+          <div class="service-full-footer">
+            <div class="service-full-price">7,000 <span class="currency">EGP/implant</span></div>
+            <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20Dental%20Implants"
+               class="btn btn-whatsapp" style="padding:10px 18px;font-size:0.85rem;" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. Dental Prosthetics -->
+      <article class="service-full-card card-same-hight reveal reveal-delay-1" data-category="restorative">
+        <img src="../imgs/Dental Prosthetics.jpg"
+             alt="Dental Prosthetics" class="service-full-img" loading="lazy" />
+        <div class="service-full-body  card-same-hight">
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ 2–4 sessions</span>
+            <span class="service-meta-item">🏷 Restorative</span>
+          </div>
+          <h3 class="service-full-name">Dental Prosthetics</h3>
+          <p class="service-full-desc card-same-hight">Custom-crafted crowns, bridges, and dentures designed to restore your smile's function and appearance with natural-looking precision.</p>
+          <div class="service-full-footer">
+            <div class="service-full-price">2,500 <span class="currency">EGP</span></div>
+            <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20Dental%20Prosthetics"
+               class="btn btn-whatsapp" style="padding:10px 18px;font-size:0.85rem;" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. Hollywood Smile -->
+      <article class="service-full-card card-same-hight reveal reveal-delay-2" data-category="cosmetic">
+        <img src="../imgs/HollywoodSmile.jpg"
+             alt="Hollywood Smile" class="service-full-img" loading="lazy" />
+        <div class="service-full-body  card-same-hight">
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ 3–5 sessions</span>
+            <span class="service-meta-item">🏷 Cosmetic</span>
+          </div>
+          <h3 class="service-full-name">Hollywood Smile</h3>
+          <p class="service-full-desc card-same-hight">The ultimate smile transformation using ultra-thin porcelain veneers. Perfect symmetry, ideal shade, and a dramatic, confidence-boosting result.</p>
+          <div class="service-full-footer">
+            <div class="service-full-price">15,000 <span class="currency">EGP</span></div>
+            <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20Hollywood%20Smile"
+               class="btn btn-whatsapp" style="padding:10px 18px;font-size:0.85rem;" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /services-full-grid -->
+
+    <!-- No results message -->
+    <div id="noResults" style="display:none;text-align:center;padding:60px 20px;">
+      <div style="font-size:3rem;margin-bottom:16px;" aria-hidden="true">🔍</div>
+      <h3 style="color:var(--text-dark);margin-bottom:8px;">No services found</h3>
+      <p style="color:var(--text-medium);">Try a different search term or filter.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY BOOK CTA -->
+<section class="section-pad-sm" style="background:var(--off-white);">
+  <div class="container">
+    <div class="wa-cta-section reveal">
+      <div class="wa-cta-icon" aria-hidden="true">
+        <svg width="36" height="36" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.13 1.523 5.868L.057 23.879a.5.5 0 0 0 .609.625l6.273-1.643A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 0 1-5.071-1.383l-.363-.217-3.773.988.989-3.658-.236-.373A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      </div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--text-dark);margin-bottom:12px;">Book Your Appointment Today</h2>
+      <p style="color:var(--text-medium);margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;">All bookings are via WhatsApp only. Contact us to schedule your consultation with Dr. Mostafa Ahmed.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://wa.me/201032161126?text=I%20want%20to%20book%20an%20appointment%20at%20Drsh%20Clinic"
+           class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.13 1.523 5.868L.057 23.879a.5.5 0 0 0 .609.625l6.273-1.643A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 0 1-5.071-1.383l-.363-.217-3.773.988.989-3.658-.236-.373A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="tel:+201032161126" class="btn btn-outline btn-lg">Call: 01032161126</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><div class="footer-logo-icon" aria-hidden="true">🦷</div><span class="footer-logo-name">Drsh Clinic</span></div>
+        <p class="footer-desc">Advanced dental care and smile makeovers with 6+ years of experience.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Instagram"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+          <a href="https://wa.me/201032161126" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.13 1.523 5.868L.057 23.879a.5.5 0 0 0 .609.625l6.273-1.643A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 0 1-5.071-1.383l-.363-.217-3.773.988.989-3.658-.236-.373A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="achievements.html" class="footer-link">Achievements</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">Our Services</h3>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Teeth Whitening</a></li>
+          <li><a href="#" class="footer-link">Dental Implants</a></li>
+          <li><a href="#" class="footer-link">Orthodontics</a></li>
+          <li><a href="#" class="footer-link">Hollywood Smile</a></li>
+          <li><a href="#" class="footer-link">Root Canal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">Contact Info</h3>
+        <div class="footer-contact-item"><span class="footer-contact-icon">📍</span><span>El Geish Street, Opposite Omar Makram Mosque, Assiut</span></div>
+        <div class="footer-contact-item"><span class="footer-contact-icon">📞</span><a href="tel:+201032161126" style="color:rgba(255,255,255,0.7);">01032161126</a></div>
+        <div class="footer-contact-item"><span class="footer-contact-icon">🕐</span><span>Daily 10 AM – 10 PM<br><strong style="color:rgba(255,255,255,0.9);">Friday: Closed</strong></span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Drsh Clinic. All rights reserved.</span>
+      <span>Dr. Mostafa Ahmed</span>
+    </div>
+  </div>
+</footer>
+
+<div class="whatsapp-float">
+  <span class="whatsapp-tooltip">Book via WhatsApp</span>
+  <a href="https://wa.me/201032161126" class="whatsapp-float-btn" target="_blank" rel="noopener" aria-label="Book on WhatsApp">
+    <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.13 1.523 5.868L.057 23.879a.5.5 0 0 0 .609.625l6.273-1.643A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 0 1-5.071-1.383l-.363-.217-3.773.988.989-3.658-.236-.373A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </a>
+</div>
+<button class="back-top" aria-label="Back to top">↑</button>
+
+<script src="../js/main.js"></script>
+<script>
+  // Extra: hide "no results" div when filter shows cards
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('servicesGrid');
+    const noRes = document.getElementById('noResults');
+    const observer = new MutationObserver(() => {
+      const visible = [...grid.querySelectorAll('.service-full-card card-same-hight')].some(c => c.style.display !== 'none');
+      noRes.style.display = visible ? 'none' : 'block';
+    });
+    observer.observe(grid, { attributes: true, subtree: true, attributeFilter: ['style'] });
+  });
+</script>
+</body>
+</html>
